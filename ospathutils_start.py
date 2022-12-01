@@ -12,18 +12,31 @@ import time
 
 def main():
     # Print the name of the OS
+    print(os.name)
+    
+    # # Check for item existence and tye
+    # print("Item exists:", str(path.exists("textfile.txt")))
+    # print("Item is a file: ", path.isfile("textfile.txt"))
+    # print("Item is a directory:", path.isdir("textfile.txt"))
 
     
-    # Check for item existence and type
+    # # Work with file paths
+    # print("the item's Path is: ", path.realpath("textfile.txt"))
 
-    
-    # Work with file paths
 
     
     # Get the modification time
 
-    
+    t = time.ctime(path.getmtime("textfile.txt"))
+    print(t)
+    print(datetime.datetime.fromtimestamp(path.getmtime("textfile.txt")))
+
+
+
     # Calculate how long ago the item was modified
+    td = datetime.datetime.now() - datetime.datetime.fromtimestamp(path.getmtime("textfile.txt"))
+    print("It has been", td, "since the file was modified")
+    print("Or,",td.total_seconds(), "seconds")
 
   
 if __name__ == "__main__":

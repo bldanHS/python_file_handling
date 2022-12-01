@@ -1,0 +1,13 @@
+myzip.zip
+ospathutils_finished.py
+shell_start.py
+challenge_accepted.py
+files_finished.py
+newtextfile.txt
+textfile.txt.bak
+shell_finished.py
+challenge_solution.py
+archive.zip
+files_start.py
+ospathutils_start.py
+The number of bytes of files in this directory is40457
